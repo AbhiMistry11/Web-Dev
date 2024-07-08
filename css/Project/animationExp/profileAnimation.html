@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        }
+        .container{
+            width: 400px;
+            height: 380px;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: cont 2.5s infinite alternate ease;
+            
+        }
+        @keyframes cont{
+           from{
+             transform: scale(1);
+             box-shadow: none;
+           }
+           to{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 15px;
+           }
+        }
+        .prof{
+            position: relative;
+            overflow: hidden;
+            
+        }
+        #me1{
+            width:250px ;
+            height: 300px;
+            animation: over 2.5s infinite alternate ease;
+        }
+       
+        @keyframes over{
+           from{
+            filter: none;
+           }
+           to{
+           filter: grayscale(40);
+           }
+        }
+        #img1{
+            position: absolute;
+            bottom: 0;
+            left: 3px;
+            animation: circle 2s infinite  alternate ease;
+        }
+        @keyframes circle{
+             from{
+                bottom: -10px;
+             }
+             to{
+                bottom: 30px;
+                left: 30px;
+             }
+        }
+        #img2{
+            position: absolute;
+            top: 0;
+            right: 2px;
+            animation: cube 3s infinite  alternate ease;
+           
+        }
+        @keyframes cube{
+            50%{
+                transform: rotatey(360deg);
+                top: 30px;
+                right: 30px;
+            }
+
+            100%{
+                top: -10px;
+                right: -10px;
+            }
+        }
+        #img3{
+            position: absolute;
+            bottom: 0;
+            right: 3px;
+            animation: dot 2s infinite  alternate ease;
+        }
+        @keyframes dot{
+             from{
+                bottom: -10px;
+             }
+             to{
+                bottom: 30px;
+             }
+        }
+        #img4{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            animation: plus 2s infinite  alternate ease;
+        }
+        @keyframes plus{
+             from{
+                top: -10px;
+             }
+             to{
+                top: 35px;
+                right: 15px;
+             }
+        }
+        #img5{
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            animation: zigzag 2s infinite  alternate ease;
+        }
+        @keyframes zigzag{
+             from{
+                left: -10px;
+             }
+             to{
+                left: 60px;
+             }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="prof">
+                <img id="me1" src="me.jpg">
+                
+            </div>
+
+            <img id="img1" src="circle.png" alt="">
+                
+            <img id="img2" src="cube.png" alt="">
+       
+            <img id="img3" src="dots.png" alt="">
+       
+            <img id="img4" src="plus.png" alt="">
+       
+            <img id="img5" src="zigzags.png" alt="">
+
+            
+        </div>
+    </div>
+</body>
+</html>

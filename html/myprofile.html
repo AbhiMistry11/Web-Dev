@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            width: 1000px;
+            height: 400px;
+            display: flex;
+            
+
+        }
+        .box1{
+            width: 60%;
+            height: 100%;
+            padding: 50px;
+        }
+        .box2{
+            width: 40%;
+            height: 100%;
+            display: flex;
+        }
+        .hire{
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 80px;
+            height: 50px;
+            box-shadow: 5px 5px black;
+        }
+        .full{
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+           <div class="box1">
+            <h1>Hi! Abhi Mistry</h1><br><br>
+            <h2>I am a <span class="full">Full Stack Web Developer</span></h2><br><br>
+            <p>I'am a software developer and here is my portfolio website.</p>
+            <p>Here you'll learn about my journey as a software developer.</p><br><br>
+            <button class="hire">Hire me</button>
+           </div>
+            <div class="box2">
+                <img class="photo" src="./animationExp/me.jpg" alt="Abhi Mistry">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

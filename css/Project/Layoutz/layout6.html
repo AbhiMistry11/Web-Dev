@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            /* background-color: black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+           
+            
+        }
+        .upbox{
+            width: 100%;
+            height: 15%;
+            background-color: cyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            
+        }
+       
+        .midbox{
+            width: 100%;
+            height: 60%;
+           
+            display: flex;
+            justify-content: space-between;
+        }
+        .leftbox{
+            width: 40%;
+            height: 100%;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            
+        }
+        .rightbox{
+            width: 55%;
+            height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+            
+           
+           
+        }
+        .top{
+            width: 100%;
+            height: 45%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            
+        }
+      
+        .bottom{
+            width: 100%;
+            height: 45%;
+            display: flex;
+           justify-content: space-between;
+           
+           
+        }
+        .left{
+            width: 45%;
+            height: 100%;
+            background-color: cyan;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .right{
+            width: 45%;
+            height: 100%;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+        }
+        .lowerbox{
+            width: 100%;
+            height: 15%;
+            background-color: hotpink;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="container">
+            <div class="upbox"><div class="head">HEADER</div></div>
+                <div class="midbox">
+                    <div class="leftbox">SIDEBAR</div>
+                    <div class="rightbox">
+                    <div class="top">CONTENT-1</div>
+                    <div class="bottom">
+                        <div class="left">CONTENT-2</div>
+                        <div class="right">CONTENT-3</div>
+                    </div>
+                </div>
+                </div>
+                 <div class="lowerbox">FOOTER</div>
+            </div>
+    </div>
+</body>
+</html>

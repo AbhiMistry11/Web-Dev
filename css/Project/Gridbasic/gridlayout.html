@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .container{
+            width: 1280px;
+            height: 585px;
+            background-color: rgb(75, 75, 240);
+            padding: 1rem;
+            display: grid;
+            gap: 1.5rem;
+            
+            
+            grid-template-areas: 
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer"
+             ;
+        }
+        .box{
+            background-color: chartreuse;
+            border: 2px solid black;
+            /* padding: 1rem; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        #header{
+            grid-area: header;
+            background-color: brown;
+        }
+        #sidebar{
+            grid-area: sidebar;
+            background-color: rgb(76, 76, 76);
+        }
+        #content1{
+            grid-area: content1;
+        }
+        #content2{
+            grid-area: content2; 
+        }
+        #content3{
+            grid-area: content3;
+        }
+        #footer{
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrappee">
+        <div class="container">
+            <div class="box" id="header">Header</div>
+            <div class="box" id="sidebar">Sidebar</div>
+            <div class="box" id="content1">Content1</div>
+            <div class="box" id="content2">Content2</div>
+            <div class="box" id="content3">Content3</div>
+            <div class="box" id="footer">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

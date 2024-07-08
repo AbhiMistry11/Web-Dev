@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/75c175432b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(234, 136, 135);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .container{
+            max-width: 700px;
+            /* height: 550px; */
+            display: flex;
+            /* background-color: black; */
+            /* border: 2px solid black; */
+            color: white;
+        }
+        .box1{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #chair{
+            width: 350px;
+            height: 300px;
+        }
+        .box2{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            /* border: 2px solid white; */
+            flex-direction: column;
+            gap: 20px;
+        }
+        .minibox{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .dollar{
+            display: flex;
+            gap: 13px;
+        }
+        .info{
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .size{
+            display: flex;
+            gap: 20px;
+        }
+        .minibox2{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          
+        }
+        #c1{
+            width: 45px;
+            height: 45px;
+            border-radius: 7px;
+        }
+
+        
+        #button{
+            width: 180px;
+            height: 38px;
+            background-color: rgb(148, 72, 82);
+            color: white;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.632);
+            transition: 0.4s;
+        }
+
+        
+
+        .fa fa-shopping-cart{
+            padding-left: 10px;
+        }
+        .cut{
+            color: rgba(240, 248, 255, 0.559);
+            text-decoration: line-through;
+        }
+
+        .cmBox{
+            display: flex;
+            gap: 15px;
+        }
+        .cm{
+            font-size: 15px;
+            margin-left: -5px;
+        }
+
+        .measurement{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img1{
+            display: flex;
+            gap: 10px;
+        }
+
+        .fade{
+            color: rgba(240, 248, 255, 0.559);
+        }
+
+        .desc{
+            cursor: pointer;
+        }
+        .det{
+            cursor: pointer;
+        }
+
+        .mm{
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box1">
+                <img id="chair" src="./images/chair1.png" alt="khurshi">
+            </div>
+            <div class="box2">
+                <div class="minibox">
+                    <h4>MODERN CHAIR</h4>
+                    <h1>Telford Kursi</h1>
+                   <div class="dollar">
+                     <h2>₹254</h2><h2 class="cut">$530</h2>
+                   </div>
+                   <div class="info">
+                      <h4 class="desc fade">Description</h4><h4 class="det">Details</h4>
+                   </div>
+                   <div class="cmBox">
+                    <div class="measurement">
+                        <div>
+                            <h2>80 <span class="cm">cm</span></h2>
+                        </div>
+                        <div>
+                            <h3 class="mm">Length</h3>
+                        </div>
+                    </div>
+
+                    <div class="measurement">
+                        <div>
+                            <h2>30 <span class="cm">cm</span></h2>
+                        </div>
+                        <div>
+                            <h3 class="mm">Width</h3>
+                        </div>
+                    </div>
+
+                    <div class="measurement">
+                        <div>
+                            <h2>67 <span class="cm">cm</span></h2>
+                        </div>
+                        <div>
+                            <h3 class="mm">Height</h3>
+                        </div>
+                    </div>
+
+                    <div class="measurement">
+                        <div>
+                            <h2>17.6 <span class="cm">cm</span></h2>
+                        </div>
+                        <div>
+                            <h3 class="mm">Weight</h3>
+                        </div>
+                    </div>
+                
+                   </div>
+                </div>
+
+
+                <div class="minibox2">
+                     <h3>Choose Color:</h3>
+                     <div class="img1">
+                        <img id="c1" src="./images/color1.jpg" alt="1">
+                        <img id="c1" src="./images/color2.jpg" alt="2">
+                        <img id="c1" src="./images/color3.jpg" alt="3">
+                        <img id="c1" src="./images/color4.jpg" alt="4">
+                        <img id="c1" src="./images/color5.jpg" alt="5">
+                        <img id="c1" src="./images/color6.jpg" alt="6">
+                     </div>
+
+                     
+                     <div class="btn">
+                        <button id="button">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                            <p>Add to cart</p>
+                        </button>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

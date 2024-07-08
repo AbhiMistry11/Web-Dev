@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75c175432b.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .container{
+            width: 100vw;
+            height: 70px;
+            display: flex;
+            background-color: rgb(15, 23, 42) ;
+        }
+       
+        .box1{
+            width: 50%;
+            height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .photo{
+            width: 180px;
+            height: 50px;
+            
+        }
+        .box2{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+     
+        .btn1{
+            border: none;
+            background-color: rgb(15, 23, 42) ;
+            color: white;
+            cursor: pointer;
+        }
+        .btn2{
+            border: none;
+            background-color: rgb(15, 23, 42) ;
+            color: white;
+            cursor: pointer;
+            
+        }
+       
+        .up{
+            width: 12px;
+            height: 12px;
+           border-radius: 50%;
+           padding: 3px;
+            /* border: 1px solid white; */
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 280px;
+            top: 20px;
+            color: white;
+            font-size: 8px;
+        }
+        .bigbox{
+            width: 100vw;
+            height: 350px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+        .Box1{
+            width: 20%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            cursor: pointer;
+            transition: transform 1s ease;
+            
+        }
+        .Box1:hover {
+            transform: scale(1.0);
+            border: 2px solid rgb(90, 88, 88);
+            box-shadow: 0px 0px 25px rgb(139, 138, 138);
+        }
+        .Box2:hover {
+            transform: scale(1.0);
+            border: 2px solid rgb(90, 88, 88);
+            box-shadow: 0px 0px 20px rgb(139, 138, 138);
+        }
+        .Box3:hover {
+            transform: scale(1.0);
+            border: 2px solid rgb(90, 88, 88);
+            box-shadow: 0px 0px 20px rgb(139, 138, 138);
+        }
+        .Box4:hover {
+            transform: scale(1.0);
+            border: 2px solid rgb(90, 88, 88);
+            box-shadow: 0px 0px 20px rgb(139, 138, 138);
+        }
+        .Box2{
+            width: 20%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            transition: transform 0.5s ease;
+        }
+        .Box3{
+            width: 20%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            transition: transform 0.5s ease;
+        }
+        .Box4{
+            width: 20%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            transition: transform 0.5s ease;
+        }
+        .heading{
+            display: flex;
+            /* margin-left: 55px;
+            margin-top: 8px; */
+        }
+        .inform{
+            width: 70%;
+            /* margin-left: 50px;
+            margin-top: 6px; */
+        }
+        .images{
+            display: flex;
+        }
+        .images img{
+            object-fit: contain;
+        }
+        #shirts{
+            width: 180px;
+            height: 140px;
+            /* margin-left: 28px; */
+        }
+        .price{
+            display: flex;
+            /* margin-left: 25px; */
+            gap: 70px;
+        }
+        
+          
+         
+        .add{
+            /* margin-left: 90px; */
+            width: 50px;
+            height: 25px;
+            border-radius: 14px;
+            border: 1px solid black;
+            background-color: white;
+            transition: transform 0.5s ease;
+            
+        }
+        h3{
+            color: green;
+        }
+       .jack{
+        color: black;
+       }
+       h6{
+        color: grey;
+       }
+       .add:hover{
+        box-shadow: 0px 0px 10px rgb(139, 138, 138);
+        background-color: black;
+        color: white;
+        cursor: pointer;
+       }
+      
+
+      
+       
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box1">
+                <img class="photo" src="navbarphoto-removebg-preview.png" >
+            </div>
+            <div class="box2">
+                <div class="hm">
+                    <button class="btn1">Home</button>
+                </div>
+               <a href="cart.html">
+                <div class="cart">
+                    <button class="btn2">
+                        <i class="fa-solid fa-cart-arrow-down"></i></button>
+                </div>
+               </a>
+                <div class="up">
+                    5
+                </div>
+            </div>
+        </div>
+        <div class="main">
+          <div class="bigbox">
+            <div class="Box1">
+                <div class="heading">
+                    <h2>Checks-Shirts</h2>
+                </div>
+                <div class="inform">
+                    <h6>This is Check Shirt In There Many Boxes Desgin. </h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="checks-shirts.png">
+                </div>
+                <div class="price">
+                    <h3>$106.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="Box2">
+                <div class="heading">
+                    <h2>Fit T-Shirts</h2>
+                </div>
+                <div class="inform">
+                    <h6>light weight & soft fabric for breathable and comfortable wearing.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$226.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box3">
+                <div class="heading">
+                    <h2>Mens Jacket</h2>
+                </div>
+                <div class="inform">
+                    <h6>Great outerwear jackets for Spring/Autumn/Winter.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$336.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box4">
+                <div class="heading">
+                    <h2 >Mens Slim Fit</h2>
+                </div>
+                <div class="inform">
+                    <h6>The color could be slightly different between on the screen and in practice.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$400.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="bigbox">
+            <div class="Box1">
+                <div class="heading">
+                    <h2>Chain Bracelet</h2>
+                </div>
+                <div class="inform">
+                    <h6>the Naga was inspired by the mythical dragon that protects the ocean's pearl.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$346.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="Box2">
+                <div class="heading">
+                    <h3 class="jack">Petite Micropave</h3>
+                </div>
+                <div class="inform">
+                    <h6>Designed by Hafeez Center in the United States.Satisfaction Guaranteed.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$206.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box3">
+                <div class="heading">
+                    <h2>Plated Princess</h2>
+                </div>
+                <div class="inform">
+                    <h6> Gifts to spoil your love more for Engagement,Valentine's Day...</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$446.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box4">
+                <div class="heading">
+                    <h3 class="jack">White Gold Plated</h3>
+                </div>
+                <div class="inform">
+                    <h6>Rose Gold Plated Double Flared Tunnel Plug Earrings.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$862.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="bigbox">
+            <div class="Box1">
+                <div class="heading">
+                    <h3 class="jack">2TB Hard Drive</h3>
+                </div>
+                <div class="inform">
+                    <h6>"USB 3.0 Compatibility Fast data transfers Improve PC Performance High Capacity;</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$306.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="Box2">
+                <div class="heading">
+                    <h2>SanDisk SSD</h2>
+                </div>
+                <div class="inform">
+                    <h6>1TB Easy upgrade for faster boot up, application load and response.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$206.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box3">
+                <div class="heading">
+                    <h2>Silicon SSD</h2>
+                </div>
+                <div class="inform">
+                    <h6>2TB  to provide the optimized performance and enhanced reliability.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$335.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box4">
+                <div class="heading">
+                    <h2>WD 4TB Drive</h2>
+                </div>
+                <div class="inform">
+                    <h6>Expand your PS4 gaming experience, setup Sleek design with high capacity</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$560.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="bigbox">
+            <div class="Box1">
+                <div class="heading">
+                    <h2>Acer SB220Q</h2>
+                </div>
+                <div class="inform">
+                    <h6>21. 5 inches Full HD widescreen IPS display Radeon free Sync technology.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$300.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="Box2">
+                <div class="heading">
+                    <h3 class="jack">Samsung Monitor</h3>
+                </div>
+                <div class="inform">
+                    <h6>49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$499.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box3">
+                <div class="heading">
+                    <h2>Snow Jacket</h2>
+                </div>
+                <div class="inform">
+                    <h6>The Jackets is US standard size, Please choose size as your usual wear.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$156.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box4">
+                <div class="heading">
+                    <h3 class="jack">Biker's Jacket</h3>
+                </div>
+                <div class="inform">
+                    <h6>"100% POLYURETHANE 100% POLYESTER 75% POLYESTER 25% COTTON </h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$126.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="bigbox">
+            <div class="Box1">
+                <div class="heading">
+                    <h3 class="jack">Rain Jacket Women</h3>
+                </div>
+                <div class="inform">
+                    <h6>Lightweight perfet for trip or casual wear---Long sleeve with hooded.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg">
+                </div>
+                <div class="price">
+                    <h3>$155.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+               
+              
+            </div>
+            <div class="Box2">
+                <div class="heading">
+                    <h3 class="jack">Short Sleeve Tshirt</h3>
+                </div>
+                <div class="inform">
+                    <h6>Lightweight fabric with great stretch, Ribbed on sleeves and neckline</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$200.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box3">
+                <div class="heading">
+                    <h3 class="jack">V Collar Tshirt</h3>
+                </div>
+                <div class="inform">
+                    <h6>slimmer fit, delivers a sleek, feminine silhouette and Added Comfort</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$234.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Box4">
+                <div class="heading">
+                    <h3 class="jack">Tshirt Cotton Short</h3>
+                </div>
+                <div class="inform">
+                    <h6>Occasion: Casual/Office/Beach/School/Home/Street.</h6>
+                </div>
+                <div class="images">
+                    <img id="shirts" src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg">
+                </div>
+                <div class="price">
+                    <h3>$254.69</h3>
+                    <div class="section">
+                        <button class="add">ADD</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
