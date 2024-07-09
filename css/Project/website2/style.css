@@ -117,6 +117,8 @@ a{
    font-size: 1.37rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 .head3{
    color: white;
@@ -124,6 +126,8 @@ a{
    font-size: 1.37rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 #student{
     width: 100vw;
@@ -219,6 +223,8 @@ a{
     font-size: 1.18rem;
     font-weight: 500;
     text-shadow: 1px 1px black;
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 .fifth-container{
     width: 100vw;
@@ -243,7 +249,8 @@ a{
     font-size: 1.3em;
     font-weight: 300;
     text-align: center;
-   
+    line-height: 30px;
+    letter-spacing: 2px;
 }
 
 .image-container{
@@ -366,6 +373,8 @@ a{
     font-size: 1rem;
     font-weight: 500;
     text-shadow: 1px 1px black;
+    line-height: 25px;
+    letter-spacing: 2px;
 }
 .nineth-container{
     width: 100vw;
