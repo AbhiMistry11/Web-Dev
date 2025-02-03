@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
-        p{
-            font-size: larger;
-            background-color: black;
-            color: white;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+       
     </style>
 </head>
 <body>
-    <p>
-        Hello Kaise ho ap sab
-    </p>
+    <div class="container w-[100vw] h-[100vh] bg-cyan-300">
+        <h1 class="box1 text-red-700 font-bold text-3xl ">Hello World!!!</h1>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

@@ -127,3 +127,78 @@
 // let totalSum = getSum(arr);
 // console.log(totalSum);
 
+// let age = prompt("Enter your age: ");
+
+// if (age >=18){
+//     console.log("you are eligible to vote");
+// }
+
+// else{
+//     console.log("you are not eligible to vote");
+// }
+// console.log("Thank you");
+
+// class Human {
+//     age = 18;
+//     #wt = "60kg";
+//     ht = "6ft";
+
+//     constructor(newAge,newHeight,newWeight){
+//         this.age = newAge;
+//         this.ht = newHeight;
+//         this.#wt = newWeight;
+
+//     }
+
+//     walking(){
+//         console.log("i am walking ",this.#wt);
+//     }
+
+//     running(){
+//         console.log("i am running");
+//     }
+//     get fetchWeight(){
+//         return this.#wt;
+//     }
+//     set modifyValue(val){
+//         this.#wt = val;
+//     }
+// }
+
+// let obj = new Human(30,50,101);
+// console.log(obj.age);
+// console.log(obj.ht);
+
+// console.log(obj.fetchWeight);
+
+// obj.running();
+// obj.walking();
+
+// const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+// function startGame(){
+//     while (true) {
+//         let userGuess = prompt("Guess a number between 1 and 100:");
+    
+//         if (userGuess === null) {
+//             alert("Game cancelled!");
+//             break;
+//         }
+    
+    
+//         if (userGuess < 1 || userGuess > 100) {
+//             alert("Please enter a valid number between 1 and 100.");
+//             continue;
+//         }
+    
+//         if (userGuess == randomNumber) {
+//             alert("😎😎Correct! You guessed the number!");
+//             break;
+//         } else if (userGuess > randomNumber) {
+//             alert("Too high! Try again.");
+//         } else {
+//             alert("Too low! Try again.");
+//         }
+//     }
+    
+// }
