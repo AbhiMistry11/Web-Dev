@@ -202,3 +202,64 @@
 //     }
     
 // }
+// for(let i=0;i<=100;i++){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+// }
+
+// let fullName="abhimistry";
+// console.log('@'+fullName+fullName.length);
+
+// let marks = [85,97,44,37,76,60];
+// let sum = 0;
+// for(let val of marks){
+//     sum+=val;
+// }
+// let avg = sum/marks.length;
+// console.log(avg);
+
+// let prices = [250,645,300,900,50];
+
+// for(let val of prices){
+//     let offer = val*10/100;
+//     let finalItem = val-offer;
+// console.log(finalItem);
+// }
+
+// let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+// companies.shift();
+// companies.splice(2,1,"Ola");
+// companies.push("Amazon");
+// console.log(companies);
+
+// const getVowels = (str)=>{
+//     let count = 0;
+//     for(const char of str){
+//         if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u" )
+//             count++;
+//     }
+//     console.log(count);
+// }
+// getVowels("Leo");
+
+// let num = [2,3,4,5,6,7];
+
+// num.forEach((val)=>{
+//     console.log(val*val);
+// })
+
+// let n = prompt("Enter the number :");
+
+// let arr = [];
+// for(let i=1;i<=n;i++){
+//     arr[i-1] = i;
+// }
+// console.log(arr);
+
+// let sum = arr.reduce((res,curr)=>{
+//     return res + curr;
+// });
+// console.log(sum);
+

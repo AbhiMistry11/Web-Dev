@@ -29,3 +29,10 @@
 // function myFunction() {
 //   console.log("Kal Anaa Kal !!");
 // }
+
+async function getData() {
+    setTimeout(function(){
+        console.log("i am asynchrones block")
+    },5000)
+}
+getData();
