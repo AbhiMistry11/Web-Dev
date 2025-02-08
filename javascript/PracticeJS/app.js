@@ -263,3 +263,30 @@
 // });
 // console.log(sum);
 
+// class ToyotaCar{
+//     start(){
+//         console.log("start");
+//     }
+
+//     stop(){
+//         console.log("stop")
+//     }
+    
+//     setBrand(brand){
+//         this.brand = brand;
+//     }
+// }
+// let fortuner = new ToyotaCar();
+// fortuner.setBrand("BMW");
+// let lexus = new ToyotaCar();
+// lexus.setBrand("Audi");
+
+class parent{
+    hello(){
+        console.log("hello jii");
+    }
+};
+
+class child extends parent{};
+
+let obj = new child();
