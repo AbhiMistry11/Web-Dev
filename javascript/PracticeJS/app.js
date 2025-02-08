@@ -281,12 +281,74 @@
 // let lexus = new ToyotaCar();
 // lexus.setBrand("Audi");
 
-class parent{
-    hello(){
-        console.log("hello jii");
-    }
-};
+// class parent{
+//     hello(){
+//         console.log("hello jii");
+//     }
+// };
 
-class child extends parent{};
+// class child extends parent{};
 
-let obj = new child();
+// let obj = new child();
+
+// class person{
+//     constructor(name){
+//         this.species = "homo sapeins";
+//         this.name = name;
+//     }
+//     eat(){
+//         console.log("eat");
+//     }
+//     sleep(){
+//         console.log("sleep")
+//     }
+// }
+
+// class engineer extends person{
+//      constructor(name){
+//          super(name );
+//      }
+//     work(){
+//         console.log("solve problem,build different");
+//     }
+// }
+
+// let engObj = new engineer("Abhi Mistry");
+
+// class college{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
+//     }
+
+// }
+// class students extends college{
+//    constructor(name,email){
+//     super(name,email);
+//    }
+// }
+// let viewData = new students("abhi","abc@gmail.com");
+
+// let data = "of students."
+// class user{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
+//     }
+//     viewData(){
+//         console.log("getting Data",data);
+//     }
+// }
+// class admin extends user{
+//     constructor(name,email){
+//         super(name,email);
+//     }
+//     editData(){
+//         data = "changing value";
+//     }
+// }
+// let student1 = new user("abhi","abc@gmail.com");
+// let student2 = new user("abhi","abc@gmail.com");
+// let student3 = new user("abhi","abc@gmail.com");
+
+// let Admin = new admin("admin","admin@college.com");
