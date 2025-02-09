@@ -179,18 +179,17 @@
 // function startGame(){
 //     while (true) {
 //         let userGuess = prompt("Guess a number between 1 and 100:");
-    
+
 //         if (userGuess === null) {
 //             alert("Game cancelled!");
 //             break;
 //         }
-    
-    
+
 //         if (userGuess < 1 || userGuess > 100) {
 //             alert("Please enter a valid number between 1 and 100.");
 //             continue;
 //         }
-    
+
 //         if (userGuess == randomNumber) {
 //             alert("😎😎Correct! You guessed the number!");
 //             break;
@@ -200,7 +199,7 @@
 //             alert("Too low! Try again.");
 //         }
 //     }
-    
+
 // }
 // for(let i=0;i<=100;i++){
 //     if(i%2==0){
@@ -271,7 +270,7 @@
 //     stop(){
 //         console.log("stop")
 //     }
-    
+
 //     setBrand(brand){
 //         this.brand = brand;
 //     }
@@ -352,3 +351,110 @@
 // let student3 = new user("abhi","abc@gmail.com");
 
 // let Admin = new admin("admin","admin@college.com");
+
+// console.log("one");
+// setTimeout(()=>{
+//     console.log("two");
+// },5000);
+// console.log("three");
+
+
+//async await 
+
+// function getData(dataId) {
+//  return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//         console.log("data", dataId);
+//        resolve("success");
+//       }, 2000);
+//  });
+// };
+// console.log("getting data1......");
+// async function getAllData(){
+//     await getData(1);
+//     console.log("getting data2......");
+//     await getData(2);
+//     console.log("getting data3......");
+//     await getData(3);
+//     console.log("getting data4......");
+//     await getData(4);
+//     console.log("getting data5......");
+//     await getData(5);
+//     console.log("getting data6......");
+//     await getData(6);
+//     console.log("getting data7......");
+//     await getData(7);
+
+// };
+// getAllData();
+
+// for(let i=1;i<=5;i++){
+//     getData(i);
+// };
+
+// getData(1,()=>{
+//     getData(2,()=>{
+//         getData(3,()=>{
+//             getData(4);
+//         });
+//     });
+// });
+
+// let promise = new Promise((resolve,reject)=>{
+//     console.log("i am promise");
+//     // resolve("fulfilled");
+//     reject("some error occured");
+// });
+
+// const getPromise = ()=>{
+//     return new Promise((resolve,reject)=>{
+//         console.log("i am promise");
+//         // resolve("success");
+//         reject("network error");
+//     });
+// };
+
+// let promise = getPromise();
+// promise.then((res)=>{
+//     console.log("fulfilled",res);
+// });
+
+// promise.catch((err)=>{
+//     console.log("rejected",err);
+// });
+
+// function asyncFunc() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data1");
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
+// function asyncFunc2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data2");
+//       resolve("success");
+//     }, 4000);
+//   });
+// }
+// console.log("fetching data1........");
+// asyncFunc().then((res) => {
+//   console.log("fetching data2.......");
+//   asyncFunc2().then((res) => {});
+// });
+
+
+// function api(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("whether data");
+//             resolve(200);
+//         },4000);
+//     });
+// };
+
+// async function getWhetherData(){
+//     await api();
+// };
