@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-screen h-screen bg-slate-800 flex justify-center items-center">
+    <div class="container bg-amber-100 w-[400px] h-[450px] rounded-md">
+        <h1 class="text-2xl font-bold m-2 ml-24 mt-8">Registration Form</h1>
+        <div class="info flex flex-col gap-4 p-4 mt-8">
+            <div class="info1">
+                <label class="font-bold" for="name">Name :</label>
+                <input class="bg-slate-800 text-white rounded-md p-1" type="text" id="name" required>
+            </div>
+            <div class="info2">
+                <label class="font-bold" for="email">Email :</label>
+                <input class="bg-slate-800 text-white rounded-md p-1 ml-1" type="email" id="email" required>
+            </div>
+            <div class="info3 mt-2">
+                <label class="font-bold">Gender :</label>
+                <label class="font-bold" for="Male">Male</label>
+                <input type="radio" id="Male" name="gender">
+                <label class="font-bold" for="Female">Female</label>
+                <input type="radio" id="Female" name="gender">
+                <label class="font-bold" for="Other">Other</label>
+                <input type="radio" id="Other" name="gender">
+            </div>
+            <div class="info4">
+                <label class="font-bold" for="college">College Name :</label>
+                <input class="bg-slate-800 text-white rounded-md p-1 ml-1" type="text" id="college">
+            </div>
+            <div class="info5">
+                <label class="font-bold" for="course">Course :</label>
+                <select id="course" class="bg-slate-800 text-white rounded-md p-1 ml-1">
+                    <option value="MCA">MCA</option>
+                    <option value="MMS">MMS</option>
+                    <option value="PGDM">PGDM</option>
+                </select>
+            </div>
+            <button class="bg-slate-800 text-white rounded-md p-1 w-24 ml-32 mt-12" id="submit">SUBMIT</button>
+        </div>
+    </div>
+
+    <div id="output" class="bg-amber-100 w-[400px] h-[300px] flex rounded-md mt-8 justify-center items-center hidden">
+        <div>
+            <h2 class="text-xl font-bold">Submitted Information:</h2>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
