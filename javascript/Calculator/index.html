@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
+    <style>
+        .btn {
+            @apply bg-gray-200 text-xl p-4 rounded-lg shadow-md hover:bg-gray-400 transition duration-300;
+        }
+    </style>
 </head>
-<body>
-    <div class="container">
-        
+<body class="flex items-center justify-center h-screen bg-gradient-to-r from-purple-400 to-blue-500">
+    <div class="bg-white p-6 rounded-lg shadow-2xl w-80 border border-gray-300">
+        <input id="display" type="text" class="w-full text-right text-3xl p-4 border rounded-lg mb-4 bg-gray-100" disabled>
+        <div class="grid grid-cols-4 gap-3">
+            <button class="btn bg-red-500 text-white" onclick="clearDisplay()">C</button>
+            <button class="btn bg-gray-300" onclick="appendValue('/')">/</button>
+            <button class="btn bg-gray-300" onclick="appendValue('*')">*</button>
+            <button class="btn bg-yellow-500 text-white" onclick="deleteLast()">DEL</button>
+            <button class="btn" onclick="appendValue('7')">7</button>
+            <button class="btn" onclick="appendValue('8')">8</button>
+            <button class="btn" onclick="appendValue('9')">9</button>
+            <button class="btn bg-blue-500 text-white" onclick="appendValue('-')">-</button>
+            <button class="btn" onclick="appendValue('4')">4</button>
+            <button class="btn" onclick="appendValue('5')">5</button>
+            <button class="btn" onclick="appendValue('6')">6</button>
+            <button class="btn bg-blue-500 text-white" onclick="appendValue('+')">+</button>
+            <button class="btn" onclick="appendValue('1')">1</button>
+            <button class="btn" onclick="appendValue('2')">2</button>
+            <button class="btn" onclick="appendValue('3')">3</button>
+            <button class="btn row-span-2 bg-green-500 text-white" onclick="calculate()">=</button>
+            <button class="btn col-span-2" onclick="appendValue('0')">0</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+        </div>
     </div>
-
 
     <script src="app.js"></script>
 </body>
