@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-screen h-screen flex justify-center items-center bg-linear-65 from-purple-300 to-pink-300">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-white w-96">
+        <h2 class="text-xl font-bold mb-4 text-center">Password Generator</h2>
+        <div class="flex items-center border border-gray-600 rounded-lg p-2 mb-4">
+            <input id="password" type="text" class="w-full bg-transparent outline-none" readonly>
+            <button id="copy" onclick="copyPassword()" class="text-gray-300 hover:text-white ml-2">Copy</button>
+        </div>
+        <div class="mb-4">
+            <label for="length" class="text-sm">Length:</label>
+            <input id="length" type="number" min="4" max="32" value="12" class="bg-gray-700 text-white p-1 rounded w-16">
+        </div>
+        <div class="mb-4">
+            <label class="flex items-center">
+                <input type="checkbox" id="uppercase" checked class="mr-2"> Uppercase
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" id="lowercase" checked class="mr-2"> Lowercase
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" id="numbers" checked class="mr-2"> Numbers
+            </label>
+            <label class="flex items-center">
+                <input type="checkbox" id="symbols" checked class="mr-2"> Symbols
+            </label>
+        </div>
+        <button id="process" onclick="GeneratePass()" class="w-full bg-blue-500 hover:bg-blue-600 p-2 rounded text-white font-semibold">Generate Password</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
