@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-screen h-screen flex items-center justify-center bg-gradient-to-t from-sky-500 to-indigo-500 p-4">
+    <div class="container w-full max-w-md  bg-gradient-to-t from-sky-900 to-indigo-950 rounded-lg p-6 shadow-lg">
+        <h2 class="text-2xl font-bold my-4 text-center text-white">WeatherApp</h2>
+        
+   
+        <div class="w-full flex items-center border border-gray-400 rounded-lg p-2 mb-4">
+            <input id="city" placeholder="Enter the City" type="text" class="w-full text-white bg-transparent outline-none px-2">
+            <button id="Search" class="text-gray-300 hover:text-white hover:bg-gray-600 px-4 py-1 rounded-lg transition">Search</button>
+        </div>
+
+        <div class="weather w-full flex flex-col justify-center items-center">
+            <div class="temp flex flex-col items-center gap-2">
+                <img id="img" class="w-24" src="images/sun.png" alt="sun">
+                <h2 id="temp1" class="text-white font-bold text-4xl">33°</h2>
+            </div>
+
+            <div class="w-full flex justify-around gap-4 mt-4">
+                <div class="flex flex-col items-center">
+                    <img class="w-16" src="images/humidity.png" alt="humidity">
+                    <h2 id="humidity1" class="text-white font-bold text-2xl">50%</h2>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img class="w-16" src="images/wind.png" alt="wind">
+                    <h2 id="wind1" class="text-white font-bold text-2xl">5.14 KpH</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
