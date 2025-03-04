@@ -1,11 +1,13 @@
+import { useState } from 'react'
 import './App.css'
-import Counter from './components/counter'
+import Counter from './components/Counter';
 
 function App() {
-  
+  const[name,setName] = useState('');
   return (
    <div>
-      <Counter />
+      <Counter name={name} setName={setName} />
+      <p>i am inside the parent container : {name}</p>
    </div>
   )
 }
