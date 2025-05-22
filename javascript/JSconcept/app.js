@@ -140,38 +140,40 @@
 // };
 
 
-let url = "http://universities.hipolabs.com/search?name=";
+// let url = "http://universities.hipolabs.com/search?name=";
 
-let btn = document.querySelector("button");
+// let btn = document.querySelector("button");
 
-btn.addEventListener("click", async()=>{
-    let country = document.querySelector("input").value;
-    console.log(country);
+// btn.addEventListener("click", async()=>{
+//     let country = document.querySelector("input").value;
+//     console.log(country);
 
-    let colArr = await getCollege(country);
-    show(colArr)
+//     let colArr = await getCollege(country);
+//     show(colArr)
 
-})
+// })
 
-function show(colArr){
-    let list = document.querySelector("#result");
-    list.innerText = "";
+// function show(colArr){
+//     let list = document.querySelector("#result");
+//     list.innerText = "";
 
-    for(col of colArr){
-        // console.log(col.name);
+//     for(col of colArr){
+//         // console.log(col.name);
 
-        let li = document.createElement("li");
-        li.innerText = col.name;
-        list.appendChild(li);
-    }
-}
+//         let li = document.createElement("li");
+//         li.innerText = col.name;
+//         list.appendChild(li);
+//     }
+// }
 
-async function getCollege(country) {
-    try{
-        let res = await axios.get(url+country);
-        return res.data;
-    }catch(e){
-        console.log(e);
-        return [];
-    }
-}
+// async function getCollege(country) {
+//     try{
+//         let res = await axios.get(url+country);
+//         return res.data;
+//     }catch(e){
+//         console.log(e);
+//         return [];
+//     }
+// }
+
+// console.log("Day 4 Of Grinding MERN Stack Web Development");
