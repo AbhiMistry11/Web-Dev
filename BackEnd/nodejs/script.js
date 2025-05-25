@@ -14,6 +14,10 @@
 // console.log(math.multi(4,5));
 // console.log(math.PI);
 
-const info = require("../Fruits");
+// const info = require("../Fruits");
 
-console.log(info);
+// console.log(info);
+
+import {sum,PI} from "./math.js"
+
+console.log(sum(1,2));
