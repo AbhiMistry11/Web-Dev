@@ -70,7 +70,6 @@ app.patch("/posts/:id", upload.single("image"), (req, res) => {
     post.content = newContent;
 
     if (req.file) {
-      // Optional: delete old image from /public/uploads/ using fs.unlinkSync(post.imagePath)
       post.imagePath = `/uploads/${req.file.filename}`;
     }
   }
