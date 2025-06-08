@@ -61,14 +61,23 @@ app.get("/posts/:id", (req, res) => {
   res.render("show.ejs", { post });
 });
 
-app.patch("/posts/:id", (req, res) => {
+app.patch("/posts/:id", upload.single("image"), (req, res) => {
   let { id } = req.params;
   let newContent = req.body.content;
   let post = posts.find((p) => id === p.id);
-  post.content = newContent;
-  console.log(post);
+
+  if (post) {
+    post.content = newContent;
+
+    if (req.file) {
+      // Optional: delete old image from /public/uploads/ using fs.unlinkSync(post.imagePath)
+      post.imagePath = `/uploads/${req.file.filename}`;
+    }
+  }
+
   res.redirect("/posts");
 });
+
 
 app.get("/posts/:id/edit", (req, res) => {
   let { id } = req.params;
