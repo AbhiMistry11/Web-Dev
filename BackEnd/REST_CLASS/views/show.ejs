@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post In Detail</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>Here is Your post in detail</h2>
+    <h4>Post id : <%= post.id %></h4>
+    <div class="post">
+      <h3 class="user">@<%= post.username %></h3>
+      <h4><%= post.content %></h4>
+     
+      <img src="<%= post.imagePath %>" alt="post image" style="max-width: 200px;" />
+    
+    <hr />
+    </div>
+  </body>
+</html>
