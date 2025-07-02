@@ -1,0 +1,59 @@
+body {
+    background-color: darkblue;
+    font-family: Arial, sans-serif;
+    margin: 1rem;
+}
+
+h1 {
+    color: orange;
+    
+}
+
+.chat {
+    width: 480px;
+    background-color: lightblue;
+    padding: 0.7rem;
+    display: inline-block;
+    margin: 0.3rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.msg {
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 6px 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.edit {
+    background-color: darkorange;
+    color: white;
+}
+
+.edit:hover {
+    background-color: orangered;
+}
+
+.delete {
+    background-color: crimson;
+    color: white;
+}
+
+.delete:hover {
+    background-color: darkred;
+}
