@@ -1,18 +1,22 @@
-import "./App.css";
-import ProductTab from "./ProductTab";
-import Counter from "./Counter";
-import LikeButton from "./LikeButton";
+import { useState } from "react";
+import CommentForm from "./CommentForm";
+import Comment from "./Comment";
 
-function App() {
+export default function App() {
+  const [submittedData, setSubmittedData] = useState(null);
+
   return (
-    <>
-    {/* <h2>BlockBuster Deals | Buy Now!!</h2>
-    <ProductTab/> */}
-    <Counter />
-    <br />
-    <LikeButton />
-    </>
+    <div>
+      <h1>Comment Submission</h1>
+      <CommentForm setSubmittedData={setSubmittedData} />
+
+      {submittedData && (
+        <Comment
+          fullName={submittedData.fullName}
+          remarks={submittedData.remarks}
+          rating={submittedData.rating}
+        />
+      )}
+    </div>
   );
 }
-
-export default App;
