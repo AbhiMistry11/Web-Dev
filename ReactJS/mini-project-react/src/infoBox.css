@@ -1,0 +1,13 @@
+.infoBox{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.card{
+    width: 25%;
+    gap: 2rem;
+}
